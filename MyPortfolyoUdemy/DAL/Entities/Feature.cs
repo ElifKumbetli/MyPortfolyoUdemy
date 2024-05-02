@@ -1,4 +1,4 @@
-﻿namespace MyPortfolyoUdemy.DAL.Entities
+﻿namespace MyPortfolioUdemy.DAL.Entities
 {
     public class Feature
     {
@@ -6,6 +6,6 @@
 
         public string Title { get; set; }
 
-        public int Description { get; set; }
+        public string Description { get; set; }
     }
 }

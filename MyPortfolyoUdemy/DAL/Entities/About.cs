@@ -1,13 +1,13 @@
-﻿namespace MyPortfolyoUdemy.DAL.Entities
+﻿namespace MyPortfolioUdemy.DAL.Entities
 {
     public class About
     {
         public int AboutId { get; set; }
 
-        public int Title { get; set; }
+        public string Title { get; set; }
 
-        public int SubDescription { get; set; }
+        public string SubDescription { get; set; }
 
-        public int Details { get; set; }
+        public string Details { get; set; }
     }
 }

@@ -5,14 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyPortfolyoUdemy.DAL.Context;
+using MyPortfolioUdemy.DAL.Context;
 
 #nullable disable
 
-namespace MyPortfolyoUdemy.Migrations
+namespace MyPortfolioUdemy.Migrations
 {
     [DbContext(typeof(MyPortfolioContext))]
-    [Migration("20240501154045_mig1")]
+    [Migration("20240502123524_mig1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,14 +32,17 @@ namespace MyPortfolyoUdemy.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AboutId"), 1L, 1);
 
-                    b.Property<int>("Details")
-                        .HasColumnType("int");
+                    b.Property<string>("Details")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SubDescription")
-                        .HasColumnType("int");
+                    b.Property<string>("SubDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Title")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AboutId");
 
@@ -124,8 +127,9 @@ namespace MyPortfolyoUdemy.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeatureId"), 1L, 1);
 
-                    b.Property<int>("Description")
-                        .HasColumnType("int");
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()

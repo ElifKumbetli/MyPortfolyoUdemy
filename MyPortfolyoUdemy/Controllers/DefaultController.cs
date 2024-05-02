@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MyPortfolyoUdemy.Controllers
+namespace MyPortfolioUdemy.Controllers
 {
     public class DefaultController : Controller
     {

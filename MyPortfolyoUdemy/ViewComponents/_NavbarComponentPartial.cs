@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MyPortfolyoUdemy.ViewComponents
+namespace MyPortfolioUdemy.ViewComponents
 {
     public class _NavbarComponentPartial:ViewComponent
     {

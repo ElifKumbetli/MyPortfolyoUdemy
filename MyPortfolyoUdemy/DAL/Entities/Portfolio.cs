@@ -1,4 +1,4 @@
-﻿namespace MyPortfolyoUdemy.DAL.Entities
+﻿namespace MyPortfolioUdemy.DAL.Entities
 {
     public class Portfolio
     {
