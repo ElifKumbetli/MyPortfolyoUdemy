@@ -30,5 +30,7 @@ namespace MyPortfolioUdemy.DAL.Context
 
         public DbSet<Testimonial> Testimonials { get; set; }
 
+        public DbSet<ToDoList> ToDoList { get; set; }
+
     }
 }
