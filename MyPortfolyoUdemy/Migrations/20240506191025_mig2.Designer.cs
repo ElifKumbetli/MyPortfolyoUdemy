@@ -12,7 +12,7 @@ using MyPortfolioUdemy.DAL.Context;
 namespace MyPortfolioUdemy.Migrations
 {
     [DbContext(typeof(MyPortfolioContext))]
-    [Migration("20240505151019_mig2")]
+    [Migration("20240506191025_mig2")]
     partial class mig2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -281,9 +281,8 @@ namespace MyPortfolioUdemy.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ToDoListId"), 1L, 1);
 
-                    b.Property<string>("Date")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("ImagUrl")
                         .IsRequired()

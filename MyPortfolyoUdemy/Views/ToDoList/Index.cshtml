@@ -39,11 +39,11 @@
                                         <td>@item.Date</td>
                                         @if (item.Status == true)
                                         {
-                                            <td><a href="/ToDoList/ChangeIsReadToFalse/@item.ToDoListId" class="btn btn-dark">Yapılmadı Olarak İşaretle</a></td>
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToFalse/@item.ToDoListId" class="btn btn-dark">Yapılmadı Olarak İşaretle</a></td>
                                         }
                                         else
                                         {
-                                            <td><a href="/ToDoList/ChangeIsReadToTrue/@item.ToDoListId" class="btn btn-info">Yapıldı Olarak İşaretle</a></td>
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToTrue/@item.ToDoListId" class="btn btn-info">Yapıldı Olarak İşaretle</a></td>
                                         }
                                         <td><a href="/ToDoList/DeleteToDoList/@item.ToDoListId" class="btn btn-danger">Sil</a></td>
                                         <td><a href="/ToDoList/UpdateToDoList/@item.ToDoListId" class="btn btn-success">Güncelle</a></td>

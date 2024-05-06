@@ -53,6 +53,20 @@ namespace MyPortfolioUdemy.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult ChangeToDoListStatusToTrue(int id)
+        {
+            var value=context.ToDoList.Find(id);
+            value.Status = true;
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
 
+        public IActionResult ChangeToDoListStatusToFalse(int id)
+        {
+            var value = context.ToDoList.Find(id);
+            value.Status = false;
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

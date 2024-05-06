@@ -8,7 +8,7 @@
 
         public string ImagUrl { get; set; }
 
-        public string Date { get; set; } //Ne kadar süre önce
+        public DateTime Date { get; set; } //Ne kadar süre önce
 
         public bool Status { get; set; }//Bildirimin durumu
     }
